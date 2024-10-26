@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--Iespēju auto-->
 <html>
 <body>
 
