@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Tava izvēle</h1>
+<p>
+<button>
+<a href="https://www.ss.com/msg/lv/transport/cars/gaz/21/gxkig.html"</a>izvēle 1</button>
+</p>
+ <p>
+<button>
+<a href="https://www.ss.com/msg/lv/transport/cars/gaz/another/kbbip.html"</a>izvēle 2</button>
+</p>
+</body>
+</html>
