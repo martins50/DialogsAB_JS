@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <!-- https://javascript-mini-projects.netlify.app/typinggame -->
-<html lang="en">
+<html lang="lv">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +13,13 @@
       crossorigin="anonymous"/>
     
     <link rel="stylesheet" href="style.css" />
-    <title>Speed Typer</title>
+    <title>ĀTRUMA CILTS</title>
+
+    
+
   </head>
   <body>
+
     <button id="settings-btn" class="settings-btn">
       <i class="fas fa-cog"></i>
     </button>
@@ -23,8 +27,8 @@
     <div id="settings" class="settings">
       <form id="settings-form">
         <div>
-          <label for="difficulty">Difficulty</label>
-          <select id="difficulty">
+          <label for="Līmenis">Līmenis</label>
+          <select id="Līmenis">
             <option value="viegli">viegli</option>
             <option value="vidēji">vidēji</option>
             <option value="smagi">smagi</option>
@@ -32,10 +36,12 @@
         </div>
       </form>
     </div>
+          <img src="datortārps.gif"
+            style="float: right; max-width: 100%; height: auto;">
+       
 
     <div class="container">
-      <h2>gif Speed Typer gif</h2>
-      <img src="C:\Users\User\Pictures\suit-14058_256.gif">
+      <h2> ĀTRUMA CILTS </h2>
       <small>Type the following:</small>
 
       <h1 id="word"></h1>
@@ -48,7 +54,7 @@
         autofocus
       />
 
-      <p class="time-container">Time left: <span id="time">15s</span></p>
+      <p class="time-container">Time left: <span id="time">20s</span></p>
 
       <p class="score-container">Score: <span id="score">0</span></p>
 
@@ -56,5 +62,13 @@
     </div>
 
     <script src="script.js"></script>
+
+       <img src="datortārps.gif"
+          style="float: left; max-width: 100%; height: auto;">
+
+       
+
+      
+    
   </body>
 </html>

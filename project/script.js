@@ -6,7 +6,7 @@ const endgameEl = document.getElementById('end-game-container');
 const settingsBtn = document.getElementById('settings-btn');
 const settings = document.getElementById('settings');
 const settingsForm = document.getElementById('settings-form');
-const difficultySelect = document.getElementById('difficulty');
+const LīmenisSelect = document.getElementById('Līmenis');
 
 // List of words for game
 const words = [
@@ -39,19 +39,19 @@ let randomWord;
 let score = 0;
 
 // Init time
-let time = 15;
+let time = 20;
 
 // Set difficulty to value in ls or medium
-let difficulty =
-  localStorage.getItem('difficulty') !== null
-    ? localStorage.getItem('difficulty')
-    : 'medium';
+let Līmenis =
+  localStorage.getItem('Līmenis') !== null
+    ? localStorage.getItem('Līmenis')
+    : 'vidēji';
 
 // Set difficulty select value
-difficultySelect.value =
-  localStorage.getItem('difficulty') !== null
-    ? localStorage.getItem('difficulty')
-    : 'medium';
+LīmenisSelect.value =
+  localStorage.getItem('Līmenis') !== null
+    ? localStorage.getItem('Līmenis')
+    : 'vidēji';
 
 // Focus on text on start
 text.focus();
@@ -114,9 +114,9 @@ text.addEventListener('input', e => {
     // Clear
     e.target.value = '';
 
-    if (difficulty === 'hard') {
+    if (Līmenis === 'smagi') {
       time += 2;
-    } else if (difficulty === 'medium') {
+    } else if (Līmenis === 'vidēji') {
       time += 3;
     } else {
       time += 5;
@@ -131,6 +131,6 @@ settingsBtn.addEventListener('click', () => settings.classList.toggle('hide'));
 
 // Settings select
 settingsForm.addEventListener('change', e => {
-  difficulty = e.target.value;
-  localStorage.setItem('difficulty', difficulty);
+  Līmenis = e.target.value;
+  localStorage.setItem('Līmenis', Līmenis);
 });
