@@ -1,8 +1,48 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(176, 186, 190);
   }
-  
-  h1 {
-    color:#7FFFD4;
-    margin-left: 20px;
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+    letter-spacing: 5px;
+    font-size-adjust: 1;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75), 0 0 25px purple, 0 0 5px darkblue;
+
   }
+  h2 {
+    color: rgb(7, 5, 37);
+    text-align: right;
+    letter-spacing: 5px;
+
+  }
+  h3 {
+    color: rgb(7, 5, 37);
+    text-align: left;
+    letter-spacing: 5px;
+    font-family: cursive;
+    margin-left: 10px;
+    font-size: 30px;
+
+  }
+  p {
+    color: rgb(7, 5, 37);
+    text-align: center;
+    margin-top: 50px;
+    letter-spacing: 2px;
+    font-size-adjust: 1;
+    font-family: cursive;
+  }
+  #borderimg {
+    border: 10px solid transparent;
+    padding: 15px;
+    border-image: url(border.png) 5% round;
+  }
+
+  /* Style the header */
+.header {
+  background-color: rgb(176, 186, 190);
+  padding: 20px;
+  text-align: center;
+}

@@ -1,6 +1,6 @@
 /*------------------------- tests ar let -----------------------------------*/
 let y = 10; // summas_mainiigais
-console.log("y mainīgā vērtība pirms {}: " 10+ y);
+console.log("y mainīgā vērtība pirms {}: " + y);
 {
   //console.log("y mainīgā vērtība iekš {20}: "10 + y);
   //y = 20;

@@ -3,7 +3,10 @@
 const person = {
     name: "John",
     age: 30,
-    city: "New York"
+    city: "New York",
+    yearOfBirth: function() {
+        return 2024 - this.age;
+    }
   };
   
   //document.getElementById("demo").innerHTML =
