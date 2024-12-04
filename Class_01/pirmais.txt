@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lapas galva</title>
+</head>
+<body>
+
+<h1>Mana pirma lapa</<h1>
+<p>1.saraksts</p>
+<p>2.saraksts</p>
+
+</body>
+</html>
+
