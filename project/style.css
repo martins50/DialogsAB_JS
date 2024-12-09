@@ -103,7 +103,7 @@ input {
 }
 
 .end-game-container {
-  background-color: inherit;
+  background-color: #e61a1a;
   display: none;
   align-items: center;
   justify-content: center;

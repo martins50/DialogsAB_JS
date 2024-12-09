@@ -1,3 +1,4 @@
+//references
 const word = document.getElementById('word');
 const text = document.getElementById('text');
 const scoreEl = document.getElementById('score');
@@ -8,7 +9,7 @@ const settings = document.getElementById('settings');
 const settingsForm = document.getElementById('settings-form');
 const LīmenisSelect = document.getElementById('Līmenis');
 
-// List of words for game
+// List of words for game(Vārdu saraksts spēlei)
 const words = [
   'sēta',
   'tense',
@@ -32,51 +33,51 @@ const words = [
   'loving'
 ];
 
-// Init word
+// Init word(Sākotnējais vārds)mainīgie
 let randomWord;
 
-// Init score
+// Init score(Sākotnējais rezultāts)
 let score = 0;
 
-// Init time
+// Init time(Sākuma laiks)
 let time = 20;
 
-// Set difficulty to value in ls or medium
+// Set difficulty to value in ls or medium(Iestatiet grūtības vērtību ls vai vidējs)
 let Līmenis =
   localStorage.getItem('Līmenis') !== null
     ? localStorage.getItem('Līmenis')
     : 'vidēji';
 
-// Set difficulty select value
+// Set difficulty select value (grūtības atlases līmenis)
 LīmenisSelect.value =
   localStorage.getItem('Līmenis') !== null
     ? localStorage.getItem('Līmenis')
     : 'vidēji';
 
-// Focus on text on start
+// Focus on text on start (koncetrēšanās uztekstu sākumā)
 text.focus();
 
-// Start counting down
+// Start counting down (skaitīt uz leju)
 const timeInterval = setInterval(updateTime, 1000);
 
-// Generate random word from array
+// Generate random word from array(Ģenerējiet vārdu no masīva)
 function getRandomWord() {
   return words[Math.floor(Math.random() * words.length)];
 }
 
-// Add word to DOM
+// Add word to DOM(Pievienojiet vārdu DOM)
 function addWordToDOM() {
   randomWord = getRandomWord();
   word.innerHTML = randomWord;
 }
 
-// Update score
+// Update score(Atjaunināt rezultātu)
 function updateScore() {
   score++;
   scoreEl.innerHTML = score;
 }
 
-// Update time
+// Update time(Atjaunināšanas laiks)
 function updateTime() {
   time--;
   timeEl.innerHTML = time + 's';
