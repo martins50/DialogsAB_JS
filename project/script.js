@@ -86,17 +86,18 @@ function updateTime() {
   if (time === 0) {
     clearInterval(timeInterval);
     // end game
+   const audio=
+ document.getElementById('myAudio');
+ //window.addEventListener('load',() => { 
+  audio.play().catch(error => {
+    console.log('Autoplay failed:' , error);
+  });
+ //}) 
     gameOver();
   
   }
 }
-const audio=
- document.getElementById('myAudio');
- window.addEventListener('load',() => { 
-  audio.play().catch(error => {
-    console.log('Autoplay failed:' , error);
-  });
- })
+
 
 // Game over, show end screen
 function gameOver() {
