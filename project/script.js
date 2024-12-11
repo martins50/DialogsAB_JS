@@ -1,4 +1,4 @@
-//references
+//referenc(atsauce)
 const word = document.getElementById('word');
 const text = document.getElementById('text');
 const scoreEl = document.getElementById('score');
@@ -30,7 +30,8 @@ const words = [
   'fīders',
   'admit',
   'drag',
-  'loving'
+  'loving',
+  'pievienot'
 ];
 
 // Init word(Sākotnējais vārds)mainīgie
@@ -86,20 +87,30 @@ function updateTime() {
     clearInterval(timeInterval);
     // end game
     gameOver();
+  
   }
 }
 
+
 // Game over, show end screen
 function gameOver() {
+  const audio=
+ document.getElementById('myAudio');
+ window.addEventListener('load',() => { 
+  audio.play().catch(error => {
+    console.log('Autoplay failed:' , error);
+  });
+ })
   endgameEl.innerHTML = `
     <h1>Laiks beidzies!</h1>
     <p>Jūsu rezultāts ir : ${score}</p>
     <button onclick="location.reload()">Atsākt</button>
+  
   `;
-
+ ;
   endgameEl.style.display = 'flex';
 }
-
+ 
 addWordToDOM();
 
 // Event listeners
