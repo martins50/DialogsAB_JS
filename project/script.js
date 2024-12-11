@@ -90,17 +90,17 @@ function updateTime() {
   
   }
 }
-
-
-// Game over, show end screen
-function gameOver() {
-  const audio=
+const audio=
  document.getElementById('myAudio');
  window.addEventListener('load',() => { 
   audio.play().catch(error => {
     console.log('Autoplay failed:' , error);
   });
  })
+
+// Game over, show end screen
+function gameOver() {
+  
   endgameEl.innerHTML = `
     <h1>Laiks beidzies!</h1>
     <p>Jūsu rezultāts ir : ${score}</p>
